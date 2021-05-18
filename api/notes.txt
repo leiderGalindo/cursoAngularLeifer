@@ -1,0 +1,12 @@
+para crear una nueva base de datos o archivo json
+debemos dijitar el siguiente comando:
+touch nombreDB.json
+ejemplo:
+touch db.json
+
+y para correr el archivo debemos ejecutar la siguiente
+linea
+
+json-server --watch nombre json
+ejemplo:
+json-server --watch db.json

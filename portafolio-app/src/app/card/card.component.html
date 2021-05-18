@@ -1,0 +1,13 @@
+<div class="card">
+    <div [routerLink]="['/','post', dataEntrante?.id]">
+        <img appImagenRota [urlCustom]="'https://th.bing.com/th/id/OIP.1OCQbyxf7bEvykoY1uiinwAAAA?w=235&h=162&c=7&o=5&pid=1.7'" class="image" [src]="dataEntrante?.img" alt="">
+        <div class="wrapper-text">
+            <div class="title">{{dataEntrante?.title}}
+            </div>
+            <div class="sub-title">{{dataEntrante?.subtitle}}</div>
+        </div>
+    </div>
+    <div>
+        <button class="favorite" (click)="agregarFavorito(dataEntrante)">Add Favorite</button>
+    </div>
+</div>
